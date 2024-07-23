@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.journey-board {
+    width: 80%;
+    margin: auto;
+}
+
+.asset-container {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.asset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asset-description {
+    display: none;
+}
+
+.expand-btn {
+    cursor: pointer;
+}
