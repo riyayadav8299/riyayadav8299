@@ -1,0 +1,17 @@
+const jsonDataUrl = 'https://dev.deepthought.education/assets/uploads/files/files/others/ddugky_project.json';
+
+fetch(jsonDataUrl)
+    .then(response => response.json())
+    .then(data => {
+        const tasks = data.tasks; // Adjust this path according to the JSON structure
+        tasks.forEach(task => {
+            const taskContainer = document.createElement('div');
+            taskContainer.className = 'task-container';
+            task.assets.forEach(asset => {
+                const assetContainer = createAssetContainer(asset);
+                taskContainer.appendChild(assetContainer);
+            });
+            document.querySelector('.journey-board').appendChild(taskContainer);
+        });
+    })
+    .catch(error => console.error('Error fetching JSON data:', error));
