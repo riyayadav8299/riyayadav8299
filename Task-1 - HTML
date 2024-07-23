@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="journey-board">
+        <!-- Example Asset Container -->
+        <div class="asset-container">
+            <div class="asset-header">
+                <h3>Asset Title</h3>
+                <button class="expand-btn">▼</button>
+            </div>
+            <div class="asset-description">
+                <p>Description goes here...</p>
+            </div>
+        </div>
+        <!-- Repeat above block for other assets or use JS to dynamically create them -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
