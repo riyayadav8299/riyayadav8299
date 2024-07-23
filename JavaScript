@@ -1,0 +1,7 @@
+document.querySelectorAll('.expand-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const description = button.nextElementSibling;
+        description.style.display = description.style.display === 'none' ? 'block' : 'none';
+        button.textContent = button.textContent === '▼' ? '▲' : '▼';
+    });
+});
